@@ -1,0 +1,7 @@
+{
+  "appId": "com.ecomacademy.ecomvideostudio",
+  "appName": "EcomVideoStudio",
+  "webDir": "www",
+  "server": { "androidScheme": "https" },
+  "android": { "allowMixedContent": false, "webContentsDebuggingEnabled": false }
+}

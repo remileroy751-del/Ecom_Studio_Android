@@ -1,0 +1,45 @@
+/* EcomVideoStudio Android — mise en page compacte pour téléphone en paysage (la page est calée sur 1100 px de large). */
+html,body{height:100%;-webkit-tap-highlight-color:transparent;-webkit-user-select:none;user-select:none;overscroll-behavior:none}
+input,textarea{-webkit-user-select:text;user-select:text}
+body.android{padding-top:env(safe-area-inset-top,0);padding-left:env(safe-area-inset-left,0);padding-right:env(safe-area-inset-right,0)}
+body.android #homeOpen,body.android #homeFolder,body.android #homePath{display:none!important}
+body.android .topbar{height:48px;padding:0 10px}
+body.android .brand strong{font-size:14px}
+body.android .brand small{display:none}
+body.android .brand .logo{width:30px;height:30px}
+body.android .topbar button{padding:6px 10px;font-size:12px}
+body.android .top-center{gap:6px}
+body.android .workspace{grid-template-columns:58px 250px 1fr;height:calc(100vh - 48px - 22px)}
+body.android .tool{width:52px;height:54px;font-size:16px}
+body.android .tool span{font-size:9px}
+body.android .side-bottom{display:none}
+body.android .panel-head{height:44px}
+body.android .statusbar{height:22px;font-size:9px}
+body.android .statusbar .credit{display:none}
+body.android .timeline-head{height:40px}
+body.android .timeline-head button{padding:6px 9px;font-size:11px;touch-action:manipulation}
+body.android .preview-controls{height:38px}
+body.android button,body.android .tool,body.android .media-item,body.android .stk,body.android .fx,body.android .tr{touch-action:manipulation}
+/* zones tactiles de glisser : le défilement natif est coupé uniquement sur ces éléments */
+body.android #timeline .clip,body.android #timeline #ruler,body.android #frame,body.android #selBox,body.android #scrub{touch-action:none}
+body.android #scrub{height:16px;background-clip:content-box;padding:6px 0}
+body.android .clip .hl,body.android .clip .hr{width:16px!important}
+body.android .home-inner{padding-top:18px}
+@media (max-height:520px){body.android .inspector{max-width:260px}}
+/* timeline compacte : plus de place pour l'aperçu vidéo */
+body.android .timeline{height:178px!important}
+body.android .lane{height:36px!important}
+body.android .clip{top:3px!important;height:30px!important}
+body.android .ruler-row,body.android .ruler{height:22px!important}
+body.android .inspector{width:230px!important;padding:10px!important}
+body.android .preview{padding:8px 14px 2px!important}
+body.android .preview-controls{height:34px!important}
+body.android .track-row{height:34px!important}
+body.android .lane{height:34px!important}
+body.android .clip{height:28px!important}
+body.android .timeline{height:196px!important}
+body.android .tlabel{width:84px!important}
+/* Mode IA : boutons Précédent / Suivant toujours visibles */
+body.android .ai-nav{position:sticky;bottom:0;z-index:6;background:#090b10;padding:8px 0;margin:0}
+body.android .ai-inner{padding-bottom:0}
+body.android .ai-body{min-height:0}
